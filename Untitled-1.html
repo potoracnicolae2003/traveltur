@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Admiral Tur</title>
+  <link rel="icon" href="imgs/admiraltur_logo.jpg" type="image/x-icon">
+
+	<!-- CSS -->
+
+	<!-- BOOTSTRAP -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+	<link rel="stylesheet" href="style.css"/>
+
+	<!-- Font Awesome Icons -->
+	<script src="https://kit.fontawesome.com/d5b956fb36.js" crossorigin="anonymous"></script>
+
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<!-- JQEURY CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+	<!-- Ancoră de sus -->
+	<div id="top"></div>
+
+	<!-- BARA DE NAVIGARE -->
+	<nav id="navScrollSpy" class="navbar sticky-top navbar-expand-lg">
+		<div class="container">
+			<a class="navbar-brand fw-bolder" href="#top">Admiral Tur</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Comută navigarea">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse container d-flex-md justify-content-md-end" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#top">Acasă</a>
+					</li>
+          <li class="nav-item">
+						<a class="nav-link" href="#destinations">Destinații</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#service">Servicii</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#gallery">Galerie</a>
+					</li>
+        
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- FINAL BARA DE NAVIGARE -->
+
+
+	<!-- carusel 60vh -->
+
+<div id="carouselTravelWasp" class="carousel slide container-fluid" data-bs-ride="carousel">
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="imgs/carousel/hike.jpg" class="d-block w-100" alt="Plimbare prin munți" />
+			<div class="carousel-caption">
+				<h1 class="fw-bolder">Explorează natura sălbatică</h1>
+				<p class="fw-medium">Descoperă liniștea și frumusețea munților</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="imgs/carousel/island-beach.jpeg" class="d-block w-100" alt="Aventuri pe plajă" />
+			<div class="carousel-caption">
+				<h1 class="fw-bolder">Bucură-te de viața pe apă</h1>
+				<p class="fw-medium">Trăiește aventuri memorabile </p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="imgs/carousel/caving.jpg" class="d-block w-100" alt="Explorare în peșteri" />
+			<div class="carousel-caption">
+				<h1 class="fw-bolder">Descoperă lumea subterană</h1>
+				<p class="fw-medium">
+					Explorarea peșterilor îți oferă o nouă perspectivă asupra naturii
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- sfârșitul caruselului -->
+
+
+<!-- motive să ne alegi -->
+<section class="choose-us features py-5">
+	<div class="container travel-wasp" data-aos="fade-up">
+		<div class="row justify-content-md-center">
+			<div class="col-xl-6 col-lg-6 col-md-12">
+				<!-- caracteristici -->
+				<div class="row">
+					<div class="col-xl-6 col-lg-6 col-md-6">
+						<i class="fa-solid fa-plane-departure"></i>
+						<h5 class="mt-2">Planificare călătorii</h5>
+						<p class="text-lg-left">
+							Îți oferim cele mai bune opțiuni pentru transport și cazare
+						</p>
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-6">
+						<i class="fa-solid fa-chart-line"></i>
+						<h5 class="mt-2">Activități personalizate</h5>
+						<p class="text-lg-left">
+							De la drumeții la sporturi acvatice, activitățile noastre se potrivesc perfect nevoilor tale
+						</p>
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-6">
+						<i class="fa-solid fa-map-location-dot"></i>
+						<h5 class="mt-2">Ghidare pe locații</h5>
+						<p class="text-lg-left">
+							Descoperă cele mai frumoase locuri, cu ajutorul experților noștri
+						</p>
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-6">
+						<i class="fa-solid fa-user-shield"></i>
+						<h5 class="mt-2">Ghid privat</h5>
+						<p class="text-lg-left">
+							Beneficiază de servicii personalizate cu un ghid dedicat doar ție
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-12">
+				<!-- imagini -->
+				<div class="row">
+					<div class="col-md-6 ps-md-5 mt-sm-3">
+						<img src="imgs/features/feature-1.jpg" class="img-fluid" alt="Plajă exotică" />
+					</div>
+					<div class="col-md-6 mt-md-5 ps-md-5 mt-3">
+						<img src="imgs/features/feature-2.jpg" class="img-fluid" alt="Plajă în Maldive" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Sfârșitul secțiunii "motive să ne alegi" -->
+
+
+<!-- Oferte Top -->
+<section id="destinations" class="top-deals py-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-title text-center" data-aos="fade-up">
+					<button type="button" class="btn primary-color btn-sm my-2" disabled>Destinații</button>
+					<h3 class="mt-md-3">Cele mai populare locuri de călătorie</h3>
+				</div>
+			</div>
+		</div>
+		<div class="row my-5">
+			<div class="col-sm-12 col-xl-4 col-lg-6">
+				<figure class="figure single-deal" data-aos="fade-right">
+					<img src="imgs/destinations/1.jpg" class="figure-img img-fluid" alt="Kayaking, Siargao">
+					<figcaption class="figure-caption p-3">
+						<span class="tr-price p-2">
+							200$/Noapte
+						</span>
+						<small><i class="fa-regular fa-clock my-2"></i> 10 zile de excursie</small>
+						<h5>Princetown, Austria</h5>
+						<div class="tour-rating mt-3">
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<span class="rating_count">(140)</span>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-sm-12 col-xl-4 col-lg-6">
+				<figure class="figure single-deal" data-aos="fade-up">
+					<img src="imgs/destinations/2.jpg" class="figure-img img-fluid"
+						alt="Vigan City, Philippines">
+					<figcaption class="figure-caption p-3">
+						<span class="tr-price p-2">
+							150$/Noapte
+						</span>
+						<small><i class="fa-regular fa-clock my-2"></i> 7 zile de excursie</small>
+						<h5>Surfers Paradise, Australia</h5>
+						<div class="tour-rating mt-3">
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<span class="rating_count">(189)</span>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-sm-12 col-xl-4 col-lg-6">
+				<figure class="figure single-deal" data-aos="fade-left">
+					<img src="imgs/destinations/3.jpg" class="figure-img img-fluid"
+						alt="Oslob Whale Shark">
+					<figcaption class="figure-caption p-3">
+						<span class="tr-price p-2">
+							350$/Noapte
+						</span>
+						<small><i class="fa-regular fa-clock my-2"></i> 10 zile de excursie</small>
+						<h5>Sydney, Australia</h5>
+						<div class="tour-rating mt-3">
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<span class="rating_count">(250)</span>
+						</div>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Sfârșitul secțiunii Top Destinații -->
+
+
+
+<!-- Servicii -->
+<section data-bs-spy="scroll" data-bs-target="#navScrollSpy" class="services py-5" id="service">
+	<div class="container" data-aos="fade-up">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-title text-center">
+					<button type="button" class="btn primary-color btn-sm my-2" disabled>Servicii</button>
+					<h3 class="mt-md-3">Ce vă oferim ?</h3>
+				</div>
+			</div>
+		</div>
+		<div class="row text-left mt-sm-2 mt-md-4">
+			<div class="col-xl-4 col-lg-6 col-md-6 col-12 services-card p-sm-2 p-md-4">
+				<div class="service p-4 my-2">
+					<div class="icon my-3">
+						<i class="fa-solid fa-bed"></i>
+					</div>
+					<div class="service-text">
+						<h4>Camere de lux</h4>
+						<p class="mt-md-2 mt-lg-3">Bucurați-vă de confort și eleganță în camerele noastre spațioase</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-6 col-md-6 col-12 services-card p-sm-2 p-md-4">
+				<div class="service p-4 my-2">
+					<div class="icon my-3">
+						<i class="fa-solid fa-burger"></i>
+					</div>
+					<div class="service-text">
+						<h4>Preparatele noastre delicioase</h4>
+						<p class="mt-md-2 mt-lg-3">Savurați cele mai bune preparate culinare pregătite de bucătarii noștri</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-6 col-md-6 col-12 services-card p-sm-2 p-md-4">
+				<div class="service p-4 my-2">
+					<div class="icon my-3">
+						<i class="fa-solid fa-taxi"></i>
+					</div>
+					<div class="service-text">
+						<h4>Taxi aeroport</h4>
+						<p class="mt-md-2 mt-lg-3">Transferuri rapide și sigure între aeroport și destinația dumneavoastră</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xl-4 col-lg-6 col-md-6 col-12 services-card p-sm-2 p-md-4">
+				<div class="service p-4 my-2">
+					<div class="icon my-3">
+						<i class="fa-solid fa-wifi"></i>
+					</div>
+					<div class="service-text">
+						<h4>Wi-Fi gratuit</h4>
+						<p class="mt-md-2 mt-lg-3">Rămâneți conectat oriunde v-ați afla cu internet de mare viteză</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-6 col-md-6 col-12 services-card p-sm-2 p-md-4">
+				<div class="service p-4 my-2">
+					<div class="icon my-3">
+						<i class="fa-solid fa-briefcase-medical"></i>
+					</div>
+					<div class="service-text">
+						<h4>Asistență medicală gratuită</h4>
+						<p class="mt-md-2 mt-lg-3">Siguranța și sănătatea dumneavoastră sunt prioritatea noastră</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-6 col-md-6 col-12 services-card p-sm-2 p-md-4">
+				<div class="service p-4 my-2">
+					<div class="icon my-3">
+						<i class="fa-solid fa-headset"></i>
+					</div>
+					<div class="service-text">
+						<h4>Ghid turistic</h4>
+						<p class="mt-md-2 mt-lg-3">Explorați cele mai frumoase locuri cu ajutorul ghizilor noștri profesioniști</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Sfârșitul secțiunii Servicii -->
+
+
+	<!-- GALERIE -->
+<section id="gallery" class="tour-gallery py-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12" data-aos="fade-up">
+				<div class="section-title text-center">
+					<button type="button" class="btn primary-color btn-sm my-2" disabled>Galerie</button>
+					<h3 class="mt-md-3">Cele mai frumoase fotografii împărtășite de turiști</h3>
+				</div>
+			</div>
+		</div>
+		<div class="gallery-grid">
+			<div class="row mt-sm-2 mt-md-4">
+				
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-gallery">
+						<img src="imgs/gallery/peru.jpg" alt="Peru" class="img-fluid">
+						<h5 class="text-center">Machu Picchu, Peru</h5>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-gallery">
+						<img src="imgs/gallery/canada.jpg" alt="Canada" class="img-fluid">
+						<h5 class="text-center">Lacul Moraine, Canada</h5>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-12">
+					<div class="single-gallery">
+						<img src="imgs/gallery/thailand.jpg" alt="Thailanda" class="img-fluid">
+						<h5 class="text-center">Thailanda</h5>
+					</div>
+				</div>
+				<div class="col-md-6 col-12">
+					<div class="single-gallery">
+						<img src="imgs/gallery/uae.jpg" alt="Emiratele Arabe Unite" class="img-fluid">
+						<h5 class="text-center">Emiratele Arabe Unite</h5>
+					</div>
+				</div>
+				<div class="col-md-6 col-12">
+					<div class="single-gallery">
+						<img src="imgs/gallery/egypt.jpg" alt="Egipt" class="img-fluid">
+						<h5 class="text-center">Egipt</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- SFÂRȘITUL GALERIEI -->
+
+
+<!-- PACHETE TURISTICE DE TOP -->
+<section class="package py-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12" data-aos="fade-up">
+				<div class="section-title text-center">
+					<button type="button" class="btn primary-color btn-sm my-2" disabled>Pachete Populare</button>
+					<h3 class="mt-md-3">Cele Mai Bune Pachete Ale Noastre</h3>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-6 col-lg-4">
+				<div class="single-package" data-aos="fade-right">
+					<div class="pack-image">
+						<img src="imgs/popular-packages/1.jpg" alt="Plaja franceză" class="img-fluid">
+					</div>
+					<div class="tour-text py-2 px-3">
+						<div class="tour-rating mb-2">
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+						</div>
+						<div class="row">
+							<div class="col-8">
+								<h5 class="fw-bolder">French Sea Beach</h5>
+							</div>
+							<div class="col-4">
+								<p class="pack-price">De la 159$</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4">
+				<div class="single-package" data-aos="fade-up">
+					<div class="pack-image">
+						<img src="imgs/popular-packages/2.jpg" alt="Stațiunea insulei de vis" class="img-fluid">
+					</div>
+					<div class="tour-text p-2">
+						<div class="tour-rating mb-2">
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+						</div>
+						<div class="row">
+							<div class="col-8">
+								<h5 class="fw-bolder">Beautiful Island Resort</h5>
+							</div>
+							<div class="col-4">
+								<p class="pack-price">De la 269$</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4">
+				<div class="single-package" data-aos="fade-left">
+					<div class="pack-image">
+						<img src="imgs/popular-packages/3.jpg" alt="Plaja Maldive" class="img-fluid">
+					</div>
+					<div class="tour-text p-2">
+						<div class="tour-rating mb-2">
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+							<i class="fas fa-star primary-color" aria-hidden="true"></i>
+						</div>
+						<div class="row">
+							<div class="col-8">
+								<h5 class="fw-bolder">Maldives Sea Beach</h5>
+							</div>
+							<div class="col-4">
+								<p class="pack-price">De la 350$</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- SFÂRȘITUL PACHETELOR TURISTICE DE TOP -->
+
+
+
+	<!-- CONTACTEAZĂ-NE -->
+<section class="contact-us py-5">
+	<div class="container">
+		<div class="contact">
+			<div class="row">
+				<div class="col-xl-8 col-12">
+					<div class="contact-form" data-aos="fade-right">
+						<h4 class="py-2">CONTACTEAZĂ-NE</h4>
+						<form action="#" method="post">
+							<div class="row">
+								<div class="col-xl-6 mb-3">
+									<input type="text" name="name" class="form-control" id="userName" placeholder="Nume">
+								</div>
+								<div class="col-xl-6 mb-3">
+									<input type="email" name="email" class="form-control" id="email" placeholder="Email">
+								</div>
+								<div class="col-xl-6 mb-3">
+									<input type="text" name="phone" class="form-control" id="phone" placeholder="Telefon">
+								</div>
+								<div class="col-xl-6 mb-3">
+									<input type="text" name="subject" class="form-control" id="subject" placeholder="Subiect">
+								</div>
+								<div class="col-xl-12 mb-3">
+									<textarea rows="6" class="form-control" name="message" placeholder="Mesajul tău" id="message"></textarea>
+								</div>
+							</div>
+							<button type="button" class="btn btn-md primary-bg submit-btn">TRIMITE ACUM</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-xl-4 col-12">
+					<div class="contact-info primary-bg" data-aos="fade-left">
+						<h4 class="py-2">Informații de contact</h4>
+						<div class="single-info">
+							<i class="fa-solid fa-phone text-center"></i>
+							<div class="info-text">
+								<h5>Sună-ne</h5>
+								<p>+37369816566</p>
+							</div>
+						</div>
+						<div class="single-info">
+							<i class="fa-solid fa-at text-center"></i>
+							<div class="info-text">
+								<h5>Scrie-ne un email</h5>
+								<p>admiral.tur@travel.com</p>
+							</div>
+						</div>
+						<div class="single-info">
+							<i class="fa-solid fa-location-arrow text-center"></i>
+							<div class="info-text">
+								<h5>Adresă</h5>
+								<p>Chișinău str. Alexandru cel Bun 98</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- SFÂRȘITUL SECȚIUNII CONTACTEAZĂ-NE -->
+
+
+	<!-- SUBSOL  -->
+<section class="footer py-5" id="contact">
+	<div class="container footer-top">
+		<div class="row">
+			<div class="col-xl-3 col-lg-4 col-12">
+				<div class="footer-column pb-xl-3 mb-4">
+					<h4 class="col-title pb-xl-3 pb-sm-2">Contact</h4>
+					<div class="footer-cont-info">
+						<p>
+							<i class="fa-solid fa-phone me-2"></i>
+							<span>+37369816566</span>
+						</p>
+						<p>
+							<i class="fa-solid fa-at me-2"></i>
+							<span>admiral.tur@travel.com</span>
+						</p>
+						<p>
+							<i class="fa-solid fa-location-arrow me-2"></i>
+							<span>Chișinău str. Alexandru cel Bun 98</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-4 col-12">
+				<div class="footer-column pb-xl-3 mb-4">
+					<h4 class="col-title pb-xl-3 pb-sm-2">Linkuri rapide</h4>
+					<ul>
+						<li><a href="#">Povestea noastră</a></li>
+						<li><a href="#">Bloguri și sfaturi de călătorie</a></li>
+						<li><a href="#">Ghid turistic</a></li>
+						<li><a href="#">Devino partenerul nostru</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-4 col-12">
+				<div class="footer-column pb-xl-3 mb-4">
+					<h4 class="col-title pb-xl-3 pb-sm-2">Asistență</h4>
+					<ul>
+						<li><a href="#">Asistență clienți</a></li>
+						<li><a href="#">Confidențialitate și politică</a></li>
+						<li><a href="#">Forum</a></li>
+						<li><a href="#">Termeni și condiții</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-4 col-12">
+				<div class="footer-column pb-xl-3 mb-4">
+					<h4 class="col-title pb-xl-3 pb-sm-2">Newsletter</h4>
+					<p>Abonându-te la lista noastră de e-mail, vei fi mereu la curent cu noutățile.</p>
+					<div class="subscribe-form">
+						<div class="form-group">
+							<input type="email" name="email" class="form-control" id="email" placeholder="Email">
+							<button type="button" class="btn sub-btn primary-bg btn-md mt-3">ABONEAZĂ-TE</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container footer-btm">
+		<div class="row text-center">
+			<small>Copyright @ Admiral Tur toate drepturile rezervate.</small>
+		</div>
+	</div>
+</section>
+<!-- SFÂRȘITUL SUBSOLULUI -->
+
+
+<div id="topControl" class="top-control">
+	<i class="fa-brands fa-space-awesome"></i>
+</div>
+
+<!-- Scripturi JS -->
+
+<!-- BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+	crossorigin="anonymous"></script>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- JQUERY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="index.js"></script>
+</body>
+
+</html>
